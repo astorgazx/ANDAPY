@@ -142,7 +142,7 @@ class DetalleFactura(models.Model):
     precio = models.IntegerField()
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
     factura = models.ForeignKey(Factura, on_delete=models.CASCADE)
-    metodo_pago = models.enums('PayPal,MercadoPago')
+    #metodo_pago = models.enums('PayPal,MercadoPago')
 
     def __str__(self):
         return self.cantidad
